@@ -13,10 +13,10 @@ if (process.env.NODE_ENV === "production: true") {
 
 app.use(routes)
 
-mongoose.connect(process.env.MONGODO_URI || "mongoose" . . . . . .
+mongoose.connect(process.env.MONGODO_URI || "mongodb://localhost/GoogleSearch", {useNewUrlParser: true});
 
 app.listen(PORT,() => {
     console.log(`🌎 ==> API server now on port ${PORT}!`);
     
-})
+});
 
